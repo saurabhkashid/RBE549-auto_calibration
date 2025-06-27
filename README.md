@@ -9,7 +9,6 @@
     * [Prerequisites](#prerequisites)
     * [Installation](#installation)
     * [Usage](#usage)
-* [Project Structure](#project-structure)
 * [Results](#results)
 
 
