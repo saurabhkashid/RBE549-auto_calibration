@@ -7,7 +7,6 @@
 * [Theory & Methodology](#theory--methodology)
 * [Getting Started](#getting-started)
     * [Prerequisites](#prerequisites)
-    * [Installation](#installation)
     * [Usage](#usage)
 * [Results](#results)
 
@@ -105,7 +104,7 @@ You can install these using pip:
 pip install numpy opencv-python scipy matplotlib
 ```
 
-### usage
+### Usage
 provide the aurgument calibrationImagePath and outputPath 
 ```python
 python Wrapper.py --calibrationImagePath ../P3Data/Calibration --outputPath ../P3Data/output
