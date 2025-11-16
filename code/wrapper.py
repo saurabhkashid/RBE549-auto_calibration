@@ -144,12 +144,12 @@ def main():
     # --- User settings ---
     # Path to your calibration images (adjust pattern as needed)
     Parser = argparse.ArgumentParser()
-    Parser.add_argument('--calibrationImagePath', default="/mnt/d/courses/computer_vision/Home_Work/skashid@wpi_hw3/P3Data/Calibration", help='provide calibration image folder path')
-    Parser.add_argument('--outputPath',default="/mnt/d/courses/computer_vision/Home_Work/skashid@wpi_hw3/P3Data/output", help= "Path to save images")
+    Parser.add_argument('--calibrationImagePath', default="/mnt/d/courses/computer_vision/Home_Work/skashid@wpi_hw3/Calibration_Imgs/Calibration_Imgs", help='provide calibration image folder path')
+    Parser.add_argument('--outputPath',default="/mnt/d/courses/computer_vision/Home_Work/skashid@wpi_hw3/Calibration_Imgs/output", help= "Path to save images")
     Arg = Parser.parse_args()
     image_path = Arg.calibrationImagePath
 
-    image_files = glob.glob(f'{image_path}/*.png')
+    image_files = glob.glob(f'{image_path}/*.jpg')
     # image_files = glob.glob(f'{image_path}/*.jpg')
     # Number of inner corners per chessboard row and column
     cb_rows, cb_cols = 6, 9 # TODO remove 2 outer col and row
