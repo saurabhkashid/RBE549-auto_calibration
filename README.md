@@ -39,6 +39,9 @@ The approach lies between traditional photogrammetric calibration and self-calib
 
 The methodology begins by examining the constraints on the camera's intrinsic parameters through the observation of a single plane.
 
+Simple Explaination![](imgs/calibration_explain.jpg)
+credit: [Kavishka Abeywardhana](https://www.linkedin.com/in/kavishka-abeywardhana-01b891214/) 
+
 * **Notation**: A 2D point is denoted by $m=[u,v]^{T}$, and a 3D point by $M=[X,Y,Z]^{T}$. Augmented vectors are represented as $\tilde{m}=[u,v,1]^{T}$ and $\tilde{M}=[X,Y,Z,1]^{T}$. The camera is modeled using the pinhole model, where the relationship between a 3D point $M$ and its image projection $m$ is given by:
     $s\tilde{m}=A[\begin{matrix}R&t\end{matrix}]\tilde{M}$ (1)
     Here, $s$ is an arbitrary scale factor, $(R, t)$ are the extrinsic parameters (rotation and translation relating the world coordinate system to the camera coordinate system), and $A$ is the camera intrinsic matrix:
